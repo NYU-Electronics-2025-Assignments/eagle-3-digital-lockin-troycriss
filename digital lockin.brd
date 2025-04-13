@@ -1988,7 +1988,8 @@ NS Package M08A</description>
 <wire x1="19.812" y1="46.228" x2="26.924" y2="46.228" width="0.3048" layer="1"/>
 <via x="26.924" y="46.228" extent="1-16" drill="0.35"/>
 <wire x1="26.924" y1="46.228" x2="26.924" y2="40.132" width="0.3048" layer="16"/>
-<wire x1="26.924" y1="40.132" x2="58.42" y2="40.132" width="0" layer="19" extent="16-16"/>
+<via x="26.924" y="40.132" extent="1-16" drill="0.35"/>
+<wire x1="26.924" y1="40.132" x2="58.42" y2="40.132" width="0.1524" layer="1"/>
 </signal>
 <signal name="GND" class="1" airwireshidden="yes">
 <contactref element="U2" pad="P$3"/>
@@ -2022,13 +2023,10 @@ NS Package M08A</description>
 <contactref element="C10" pad="1"/>
 <contactref element="C8" pad="1"/>
 <polygon width="0.3048" layer="1" spacing="2.54" pour="hatch">
-<vertex x="72.136" y="93.98"/>
-<vertex x="74.168" y="93.98"/>
+<vertex x="0.508" y="94.488"/>
+<vertex x="74.168" y="94.488"/>
 <vertex x="74.168" y="1.524"/>
 <vertex x="0.508" y="1.524"/>
-<vertex x="0.508" y="94.488"/>
-<vertex x="4.064" y="94.488"/>
-<vertex x="4.064" y="93.98"/>
 </polygon>
 <polygon width="0.3048" layer="16" spacing="2.54" pour="hatch">
 <vertex x="74.168" y="93.472"/>
@@ -2092,9 +2090,10 @@ NS Package M08A</description>
 <wire x1="71.628" y1="32.512" x2="71.12" y2="33.02" width="0.3048" layer="16"/>
 <wire x1="71.12" y1="33.02" x2="71.12" y2="83.312" width="0.3048" layer="16"/>
 <via x="71.12" y="83.312" extent="1-16" drill="0.35"/>
-<wire x1="52.926" y1="83.058" x2="70.866" y2="83.058" width="0.3048" layer="1"/>
-<wire x1="70.866" y1="83.058" x2="71.12" y2="83.312" width="0.3048" layer="1"/>
-<wire x1="52.926" y1="83.058" x2="51.816" y2="83.058" width="0" layer="19" extent="1-1"/>
+<wire x1="71.12" y1="83.312" x2="70.866" y2="83.058" width="0.3048" layer="1"/>
+<wire x1="70.866" y1="83.058" x2="52.926" y2="83.058" width="0.3048" layer="1"/>
+<wire x1="52.324" y1="83.058" x2="51.816" y2="83.058" width="0.3048" layer="1"/>
+<wire x1="52.926" y1="83.058" x2="52.324" y2="83.058" width="0.3048" layer="1"/>
 </signal>
 <signal name="ADCREF">
 <contactref element="U2" pad="P$35" route="any" routetag="U$1.ADC_REF"/>
@@ -2102,10 +2101,8 @@ NS Package M08A</description>
 <contactref element="IC2" pad="1"/>
 <contactref element="IC2" pad="2"/>
 <contactref element="R1" pad="2"/>
-<wire x1="12.258" y1="48.005" x2="12.132" y2="47.879" width="0.3048" layer="1"/>
 <wire x1="12.258" y1="49.275" x2="12.132" y2="49.149" width="0.3048" layer="1"/>
 <wire x1="12.258" y1="52.324" x2="12.258" y2="49.275" width="0.3048" layer="1"/>
-<wire x1="12.132" y1="47.879" x2="12.132" y2="49.149" width="0.3048" layer="1"/>
 <wire x1="12.258" y1="52.324" x2="12.7" y2="52.766" width="0.3048" layer="1"/>
 <wire x1="12.7" y1="52.766" x2="12.7" y2="54.864" width="0.3048" layer="1"/>
 <wire x1="12.7" y1="54.864" x2="27.432" y2="54.864" width="0.3048" layer="1"/>
@@ -2121,6 +2118,7 @@ NS Package M08A</description>
 <via x="68.58" y="80.264" extent="1-16" drill="0.35"/>
 <wire x1="52.926" y1="80.518" x2="68.326" y2="80.518" width="0.3048" layer="1"/>
 <wire x1="68.326" y1="80.518" x2="68.58" y2="80.264" width="0.3048" layer="1"/>
+<wire x1="12.132" y1="49.149" x2="12.132" y2="47.879" width="0.3048" layer="1"/>
 </signal>
 <signal name="LEDCTRL">
 <contactref element="U2" pad="P$27" route="any" routetag="U$1.GP21"/>
@@ -2198,7 +2196,6 @@ NS Package M08A</description>
 <contactref element="R6" pad="1"/>
 <wire x1="44.958" y1="25.4" x2="68.392" y2="25.4" width="0.3048" layer="1"/>
 <wire x1="68.392" y1="25.4" x2="68.834" y2="24.958" width="0.3048" layer="1"/>
-<wire x1="68.834" y1="24.958" x2="68.834" y2="18.222" width="0.3048" layer="1"/>
 <wire x1="58.166" y1="20.762" x2="66.294" y2="20.762" width="0.3048" layer="1"/>
 <wire x1="66.294" y1="20.762" x2="68.834" y2="18.222" width="0.3048" layer="1"/>
 <wire x1="58.166" y1="20.762" x2="58.1" y2="20.828" width="0.3048" layer="1"/>
@@ -2209,6 +2206,7 @@ NS Package M08A</description>
 <via x="56.388" y="12.7" extent="1-16" drill="0.35"/>
 <wire x1="56.388" y1="12.7" x2="56.46" y2="12.772" width="0.3048" layer="1"/>
 <wire x1="56.46" y1="12.772" x2="57.831" y2="12.772" width="0.3048" layer="1"/>
+<wire x1="68.834" y1="18.222" x2="68.834" y2="24.958" width="0.3048" layer="1"/>
 </signal>
 <signal name="N$2">
 <contactref element="C10" pad="2"/>
@@ -2233,7 +2231,11 @@ NS Package M08A</description>
 <contactref element="R3" pad="2"/>
 <contactref element="R5" pad="1"/>
 <wire x1="68.834" y1="16.322" x2="68.834" y2="11.364" width="0.3048" layer="1"/>
-<wire x1="68.834" y1="16.322" x2="68.834" y2="26.858" width="0" layer="19" extent="1-1"/>
+<wire x1="68.834" y1="16.322" x2="68.834" y2="16.42686875" width="0.3048" layer="1"/>
+<wire x1="68.834" y1="26.75313125" x2="68.834" y2="26.858" width="0.3048" layer="1"/>
+<wire x1="68.834" y1="16.42686875" x2="69.8634" y2="17.45626875" width="0.3048" layer="1"/>
+<wire x1="69.8634" y1="25.72373125" x2="68.834" y2="26.75313125" width="0.3048" layer="1"/>
+<wire x1="69.8634" y1="17.45626875" x2="69.8634" y2="25.72373125" width="0.3048" layer="1"/>
 </signal>
 <signal name="N$7">
 <contactref element="R5" pad="2"/>
@@ -2286,12 +2288,6 @@ NS Package M08A</description>
 </signal>
 <signal name="N$15">
 <contactref element="R9" pad="1"/>
-</signal>
-<signal name="N$14">
-<via x="54.864" y="9.652" extent="1-16" drill="0.35"/>
-</signal>
-<signal name="N$16">
-<via x="61.976" y="17.78" extent="1-16" drill="0.35"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
